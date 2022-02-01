@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Idroid';
+    src: url(fontes/idroid.otf);
+}
+
+body{
+    background-color: lightgreen;
+    margin: 0px;
+}
+
+body > header{
+    background-image: linear-gradient(180deg, #63e757, #1f7018);
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+a.externo::after{
+    content: "\00A0\1F517";
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+
+}
+
+header > p{
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.2em;
+    margin-bottom: 12px;
+}
+
+h2, h3 {
+    font-family: 'Idroid', sans-serif;
+    color: rgb(28, 107, 28);
+    padding-left: 5px;
+}
+
+article > h3{
+    background-image: linear-gradient(90deg, rgb(111, 245, 111), rgba(111, 245, 111, 0.11));
+}
+
+h4{
+    margin: 0px;
+}
+
+
+div{
+    display: inline-block;
+}
+
+
+nav{
+    margin: auto;
+}
+
+nav > a{
+    margin: auto;
+    color: rgb(168, 202, 157);
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav > a:hover{
+    color: #2b6126;
+    background-color: #63e757;
+}
+
+nav > a::before{
+    font-style: normal;
+}
+
+nav > a::after{
+    font-style: normal;
+
+}
+
+nav > p{
+    margin-bottom: 0px;
+}
+
+p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.pequena{
+    max-width: 350px;
+    margin: auto;
+}
+
+main{
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 5px black;
+}
+
+main > article{
+    padding: 5px;
+    margin: 3px;
+}
+
+main > p{
+    margin: 10px auto auto auto;
+}
+
+main > section{
+    background-color: rgb(114, 236, 114);
+    border-radius: 10px;
+}
+
+header > p,h1 {
+    text-align: center;
+}
+
+section > header{
+    background-color: rgb(64, 170, 64);
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+section > p{
+    padding: 7px;
+    margin: 0px;
+}
+
+footer > p{
+    text-align: center;
+    background-color: darkgreen;
+    color: white;
+    margin: 0px
+}
+
+.video{
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding-bottom: 59%;
+}
+
+.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#apresentacao{
+    color: rgb(235, 235, 235);
+}
+
+p > a{
+    background-color: rgb(111, 245, 111);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p > a:hover{
+    text-decoration: underline;
+    color: rgb(49, 109, 49);
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: rgb(92, 182, 105);
+    background-color: darkgreen;
+    padding: 0;
+}
+
+.lista{
+    display: block;
+    margin: auto;
+}
+
+ul{
+    list-style-type: "\2714\00A0\00A0";
+    columns: 2;
+}
