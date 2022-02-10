@@ -8,6 +8,12 @@
     padding: 0;
 }
 
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
 main{
     overflow-x: hidden;
 }
@@ -23,18 +29,19 @@ h1, header > p{
 }
 
 header > p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font1);
     margin-bottom: 0;
 }
 
 h1{
-    font-size: 10vh;
-    font-family: 'Passion One', cursive;
+    font-size: 10vw;
+    font-family: var(--font2);
+    font-variant: small-caps;
 }
 
 p{
-    font-family: 'Sriracha', cursive;
-    font-size: 1em;
+    font-family: var(--font3);
+    font-size: 3vw;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -42,6 +49,7 @@ p{
 a{
     color: rgb(218, 218, 218);
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover{
@@ -52,12 +60,15 @@ a:hover{
 section{
     width: 100%;
     background-color: white;
+    margin-bottom: 10vh; 
 }
 
 .paralax{
-    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: right center;
+    box-shadow: inset -5px 5px 20px black;
 }
 
 #imagem-1{
@@ -74,6 +85,7 @@ section{
     margin: 20px 0px;
     padding: 10px;
     color: white;
+    line-height: 2em;
 }
 
 footer{
@@ -83,6 +95,6 @@ footer{
 footer > p{
     text-align: center;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font1);
     margin-bottom: 0;
 }
